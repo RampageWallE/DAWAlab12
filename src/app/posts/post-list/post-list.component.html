@@ -1,0 +1,15 @@
+<div style="display: flex; margin: 30px;">
+    <div style="flex: 1; flex-direction: column;">
+        <h3>Post List</h3>
+        <ol>
+            <li 
+                *ngFor="let post of posts"
+                (click)="selectPost(post)"
+            >
+                <span>{{post.title}}</span>
+                <span> Vistas : {{post.views}} - Comentarios : {{post.coments}}</span>
+            </li>
+        </ol>
+    </div>
+    <app-post-details style="flex: 1;" *ngIf="selectedPost" [post]="selectedPost"></app-post-details>
+</div> 

@@ -1,3 +1,29 @@
-<app-user-list></app-user-list>
+<nav style="display: flex">
+    <a 
+        routerLink="/" 
+        style="flex: 1; background-color: red; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 30px; text-decoration: none;"
+    >
+        Home
+    </a>
+    <a 
+        routerLink="/about" 
+        style="flex: 1; background-color: green; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  font-size: 30px; text-decoration: none; "
+    >
+        About
+    </a>
+    <a 
+        routerLink="/posts" 
+        style="flex: 1; background-color: rgb(13, 55, 139); text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  font-size: 30px; text-decoration: none; "
+    >
+        Posts
+    </a>
+    <a 
+        routerLink="/users" 
+        style="flex: 1; background-color: rgb(93, 120, 175); text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  font-size: 30px; text-decoration: none; "
+    >
+        Usuarios
+    </a>
+</nav>
 
-<!-- <h1>hola mundo</h1> -->
+<router-outlet></router-outlet>
+

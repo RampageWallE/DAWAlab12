@@ -1,0 +1,12 @@
+<div>
+    <h3>Details</h3>
+    <h3>
+        <div
+            *ngIf="post"
+        >
+            <h5>{{post.title}}</h5> 
+            <p style="font-size: 20px;">{{post.content}}</p>
+            <img [src]="post.image" alt="esta es la imagen" width="100%" >
+        </div>
+    </h3>
+</div>

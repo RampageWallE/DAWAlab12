@@ -1,5 +1,15 @@
-<ul>
-    <li *ngFor="let user of users">
-        {{user.id}} - {{user.name}}
-    </li>
-</ul>
+<div style="display: flex; margin: 30px;">
+    <div style="flex: 1">
+        <ul>
+            <li (click)="selectUser(user.id)" *ngFor="let user of users">
+                {{user.id}} - {{user.name}} - {{user.lastname}}
+            </li>
+        </ul>
+    </div>
+    <app-user-details style="flex: 1;" *ngIf="selectedUser" [user]="selectedUser"></app-user-details>
+
+</div>
+
+
+
+
